@@ -30,7 +30,6 @@ class MiDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: const Icon(Icons.restaurant),
             title: const Text("Pregunta 3: Lista de Platillos"),
             onTap: () => Navigator.push(
               context,
