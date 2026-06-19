@@ -12,12 +12,10 @@ class MiDrawer extends StatelessWidget {
       child: ListView(
         children: [
           ListTile(
-            leading: const Icon(Icons.home),
             title: const Text("Inicio"),
             onTap: () => Navigator.pop(context),
           ),
           ListTile(
-            leading: const Icon(Icons.calculate),
             title: const Text("Pregunta 1: Combustible"),
             onTap: () => Navigator.push(
               context,
@@ -25,7 +23,6 @@ class MiDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: const Icon(Icons.monetization_on),
             title: const Text("Pregunta 2: Salario Neto"),
             onTap: () => Navigator.push(
               context,
