@@ -39,7 +39,7 @@ class Cuerpo extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Título: Ejercicios de Programación"),
-                      Text("Programador: Juan Paz"),
+                      Text("Programador: Eduardo Tamayo"),
                       Text("Carrera: Desarrollo de Software"),
                     ],
                   ),
@@ -74,7 +74,10 @@ class Cuerpo extends StatelessWidget {
           children: [
             ListTile(
               title: const Text("Inicio"),
-              onTap: () => Navigator.pop(context),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const NavegadorDrawer()),
+              ),
             ),
             ListTile(
               title: const Text("Pregunta 1: Combustible"),
