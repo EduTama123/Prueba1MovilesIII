@@ -1,3 +1,4 @@
+import 'package:app_prueba1/main.dart';
 import 'package:app_prueba1/screens/Pagina1.dart';
 import 'package:app_prueba1/screens/Pagina2.dart';
 import 'package:app_prueba1/screens/Pagina3.dart';
@@ -13,7 +14,10 @@ class MiDrawer extends StatelessWidget {
         children: [
           ListTile(
             title: const Text("Inicio"),
-            onTap: () => Navigator.pop(context),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const NavegadorDrawer()),
+            ),
           ),
           ListTile(
             title: const Text("Pregunta 1: Combustible"),
